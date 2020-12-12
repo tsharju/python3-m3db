@@ -1,0 +1,9 @@
+*.pyc
+*.pyo
+.venv/
+.vscode/
+.eggs/
+build/
+dist/
+m3db.egg-info/
+__pycache__/
