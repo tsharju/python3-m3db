@@ -12,6 +12,6 @@ class AsyncM3DBClient(M3DBClientBase):
         sample: float,
         *,
         labels: Optional[Mapping] = None,
-        timestamp: Optional[int] = None
+        timestamp: Optional[int] = None,
     ):
         pass
