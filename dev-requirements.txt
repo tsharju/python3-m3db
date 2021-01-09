@@ -1,0 +1,7 @@
+build
+mypy
+pytest
+pytest-httpx
+black
+isort
+coverage

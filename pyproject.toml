@@ -1,12 +1,8 @@
 [build-system]
 requires = [
-  "setuptools >= 42",
-  "wheel >= 0.29.0",
-  "setuptools_scm[toml] >= 3.4",
-  "protobuf >= 3.14.0",
-  "anyio == 2.0.2",
-  "llist >= 0.6",
-  "mypy==0.790",
+  "setuptools",
+  "wheel",
+  "setuptools_scm[toml]"
 ]
 build-backend = "setuptools.build_meta"
 
@@ -21,8 +17,9 @@ skip_gitignore = true
 line_length = 99
 multi_line_output = 4
 
-[tool.autopep8]
-max_line_length = 99
+[tool.black]
+line-length = 88
+target-version = ['py37']
 
 [tool.coverage.run]
 source = ["m3db"]
