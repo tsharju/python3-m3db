@@ -7,3 +7,4 @@ build/
 dist/
 m3db.egg-info/
 __pycache__/
+version.py
