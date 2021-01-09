@@ -24,6 +24,7 @@ target-version = ['py37']
 [tool.coverage.run]
 source = ["m3db"]
 relative_files = true
+omit = ["m3db/version.py"]
 
 [tool.coverage.report]
 show_missing = true
