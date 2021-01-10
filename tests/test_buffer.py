@@ -1,6 +1,7 @@
+from unittest import mock
+
 from m3db.buffer import TimeSeriesBuffer
 
-from unittest import mock
 
 @mock.patch("m3db.utils.get_utc_timestamp_ms", side_effect=[0, 1, 2])
 def test_write_series(mock_timestamp):

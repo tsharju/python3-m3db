@@ -1,10 +1,13 @@
+from datetime import datetime, timezone
+from unittest import mock
+
+import httpx
+import pytest
+import snappy
+
 from m3db.client import M3DBClient
 from m3db.prompb.remote_pb2 import WriteRequest
-from unittest import mock
-from datetime import datetime, timezone
-import pytest
-import httpx
-import snappy
+
 
 @pytest.mark.parametrize("ts", [None, 0])
 @mock.patch("m3db.utils.get_utc_timestamp_ms", return_value=1607925092393)
