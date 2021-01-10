@@ -2,11 +2,12 @@ import platform
 from typing import Optional
 
 from .buffer import TimeSeriesBuffer
+from .version import version
 
 
 class M3DBClientBase:
 
-    USER_AGENT_STRING = f"python-m3db/1.0.0 Python/{platform.python_version()}"
+    USER_AGENT_STRING = f"python3-m3db/{version} Python/{platform.python_version()}"
 
     buffer: TimeSeriesBuffer
 
