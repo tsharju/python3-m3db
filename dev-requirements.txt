@@ -6,3 +6,5 @@ black
 isort
 coverage
 pylint
+trio
+curio
